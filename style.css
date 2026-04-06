@@ -1,0 +1,196 @@
+/* [Requirement 9] Reset dasar dan scroll halus */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; /* Membuat transisi navigasi halus */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0b0c10;
+    color: #c5c6c7;
+    line-height: 1.6;
+}
+
+/* Navigasi Styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 8%;
+    background: rgba(31, 40, 51, 0.95);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #66fcf1;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.logo span { color: #66fcf1; }
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #66fcf1;
+}
+
+/* Header / Hero Section */
+header {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                url('https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 8%;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.hero-content h1 span { color: #66fcf1; }
+
+.btn-main {
+    background-color: #66fcf1;
+    color: #0b0c10;
+    padding: 22px 30px;
+    font-size: xx-large;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.btn-main:hover {
+    background-color: #45a29e;
+    transform: scale(1.05);
+}
+
+/* Section Styling */
+.about-section {
+    padding: 160px 8%;
+    background-color: #0b0c10;
+}
+
+
+.about-judul {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.about-judul span { color: #66fcf1; }
+
+/* Container Flexbox untuk Gambar & Teks */
+.about-container {
+    display: flex;
+    align-items: center; /* Sejajar tengah secara vertikal */
+    gap: 40px; /* Jarak antara gambar dan teks */
+    flex-wrap: wrap; /* Agar responsif di HP */
+}
+
+/* Gambar di Kiri */
+.about-img {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-img img {
+    border-radius: 15px;
+    border: 2px solid #66fcf1;
+}
+
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-text h3 {
+    color: #66fcf1;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.main-container {
+    background-color: #0b0c10;
+    padding: 160px 8%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #66fcf1;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.card img {
+    border-radius: 10px;
+    border: 2px solid #1f2833;
+    transition: 0.3s;
+}
+
+.card img:hover {
+    border-color: #66fcf1;
+}
+
+.-section {
+    background-color: #0b0c10;
+    padding: 160px 8%;
+    text-align: center;
+}
+
+.location-container {
+    margin-top: 30px;
+    border: 3px solid #1f2833;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+footer {
+    padding: 30px;
+    border-block-start: 2px solid #66fcf1;
+    background-color: rgba(31, 40, 51, 0.95);
+    text-align: center;
+}
